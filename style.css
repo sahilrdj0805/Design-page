@@ -1,0 +1,400 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height:100%;
+    width:100%
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding-top: 1px; /*
+    border: 5px solid black; */
+   /* margin-left: 20px; */
+}
+nav{
+    height: 11vh;
+    width: 100%;  
+    margin-top: 30px;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    /* gap: 160px; */
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+nav h2{
+    font-size: 1.4vw;
+    /* padding-right: 3.5vw; */
+    border-right: 2px solid black;
+    /* padding-top: 1vw; */
+    height: 100%;
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 550;
+    
+}
+nav h1{
+    font-size: 2.5vw;
+    /* padding-right: 3.5vw; */
+    
+    /* padding-top: 1vw; */
+    height: 100%;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: monument;
+    
+}
+nav h1::after{
+    content: "©";
+    font-size: 1vw;
+    font-weight: 500;
+    position: relative;
+    bottom:18%;
+   left: 2%;
+}
+nav h1::before{
+    content: "model management";
+    font-family: sans-serif;
+    font-size: 9.1px;
+    font-weight: 500;
+    position: relative;
+    top:30%;
+   left: 70%;
+   width: 100%;
+   letter-spacing: 0.1px;
+}
+nav i{
+    font-size: 1.8vw;
+}
+nav :nth-last-child(1){
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#center{
+    /* background-color: red; */
+    width:100%;
+    height:85%;
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    position: relative;
+}
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 55%;
+    width:92%;
+    /* background-color: blue; */
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: #fff;
+    /*   */
+
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+
+}
+#over1 h1{
+    font-size: 3.6vw;
+    font-family: monument;
+    color: aliceblue;
+    margin-bottom: 2vw;
+    mix-blend-mode:exclusion;
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.4vw;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* border-bottom:5px solid white; */
+}
+ #over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.8vw 0vw;
+}
+#over2 h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#over2 img{
+    color: #fff;
+    height: 4vw;
+}
+#scroll{
+     height: 40vh;
+    width:100%;
+    /* background-color: red; */
+    white-space: nowrap;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+#scroll img{
+  width:18.6%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+  border-radius:50%;
+  /* display: none; */
+  margin:1vw;
+}
+#container{
+    /* background-color: blue; */
+    width: 100%;
+    height: 110%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes anim {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }  
+}
+#alphabet{
+    height: 10vh;
+    width:100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.5vw;
+    padding: 2vw;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#alphabet h5{
+    font-size: 2vw;
+    font-style: italic;
+   border-bottom: 2px solid rgb(0, 0, 0);
+   font-weight: 550;
+   letter-spacing: 2px;
+}
+#alphabet h6{
+    font-size: 1vw;
+    font-style: italic;
+   padding: 0.6vw 0.8vw;
+   font-weight: 400;
+   /* background-color: yellow; */
+   border-radius: 50%;
+   border: 2px solid rgba(0, 0, 0, 0);
+   cursor: pointer;
+   transition: all ease-in 0.2s;
+    
+}
+#alphabet h6:hover{
+    border: 2px solid rgba(0, 0, 0, 0.767);
+}
+#page{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 5vw;
+}
+#page1{
+    width:46%;
+    height:100%;
+    background-color: yellow;
+   background-image: url(https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   background-position: center;
+   
+}
+#page2{
+    width: 48%;
+    height: 70%;
+    background-color: green;
+    background-image: url(https://images.unsplash.com/photo-1624319412617-2e5400f76b8b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    margin-bottom: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#page1 h1{
+    margin-top:80vh;
+    font-size: 3vw;
+}
+#page2 h3{
+margin-top: 70vh;
+font-size: 1vw;
+}
+#page2 h4{
+    margin-top: 70vh;
+    font-size: 0.8vw;
+}
+#page3{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 3vw;
+    position: relative;
+   
+}
+#circular{
+    width: 42%;
+    height: 100%;
+    
+}
+#circular img{
+    width:42%;
+    height:30%;
+    margin-top:20vh;
+    margin-left: 10vw;
+}
+
+#art{
+    width:52%;
+    height: 100%;
+    /* background-color: yellow; */
+    background-image: url(https://images.unsplash.com/photo-1439778615639-28529f7628bc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D  );
+    background-size: cover;
+    background-position: center;
+   
+}
+#circular h3{
+    margin-top:20vh;
+    font-family:sans-serif;
+    font-weight: 600;
+}
+#page4{
+    width:100%;
+    height: 100%;
+    position: relative;
+   
+
+}
+#page4>h1{
+    text-align: center;
+    padding: 3vw;
+    font-family: monument;
+    text-transform: uppercase;
+}
+    .elem{
+        height:17vh;
+        width:100%;
+        /* background-color: greenyellow; */
+        border-top: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 2vw;
+        background-color: #77ce144b;
+       
+        
+    }
+    .elem:nth-child(5){
+        border-bottom: 2px solid black;
+    }
+   
+    .elem .elem2{
+        width:40%
+    }
+    .elem>h4{
+        width:6%;
+        /* height:20%; */
+        /* padding:0vw 3.2vw; */
+        text-transform: uppercase;
+    }
+   
+    .elem2 h4{
+        /* padding: 0vw 3.5vw; */
+        font-weight: 530;
+    }
+    .elem img{
+        height: 7.8vw;
+        width: 7.8vw;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
+        position: absolute;
+        left:18%; 
+        
+    }
+    #marque{
+        width: 100%;
+        /* background-color: red; */
+        white-space: nowrap;
+        margin-top:3vw;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 0.8vw;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    #marque h1{
+        font-family: monument;
+        display: inline-block;
+        font-size: 3vw;
+        text-transform: uppercase;
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+        /* background-color: blue; */
+        letter-spacing: 0.4vw;
+        margin-right: 16px;
+        animation-name: move;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes move {
+        from{
+            transform: translateX(0 );
+        }
+       to{
+        transform: translatex(calc(-100% - 20px ));
+       } 
+    }
+  
+    
+ 
+   
+  
+    
